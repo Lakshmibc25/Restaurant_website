@@ -1,6 +1,3 @@
-New-Item -ItemType Directory -Force -Path .\main\templates
-
-$tpl = @'
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
@@ -69,6 +66,3 @@ $tpl = @'
 
 </body>
 </html>
-'@
-
-Set-Content -Path .\main\templates\menu.html -Value $tpl -Encoding UTF8
